@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cnlykoi43ujae"]
 
+[ext_resource type="Script" uid="uid://b737rgbslbh1c" path="res://scripts/ui/MainController.gd" id="1_nbc6x"]
+
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_2n6rp"]
 color = Color(0.1254902, 0.14117648, 0.17254902, 1)
 
@@ -12,6 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_nbc6x")
 
 [node name="Background" type="ColorRect" parent="." unique_id=719758924]
 layout_mode = 1
@@ -199,6 +202,25 @@ text = "ЛЕСОРУБЫ"
 layout_mode = 2
 theme_override_font_sizes/font_size = 42
 text = "Lv. 1"
+
+[node name="WorkersRow" type="HBoxContainer" parent="MarginContainer/MainVBox/ProductionScroll/ProductionList/LumberjackRow/LumberjackContent/LumberjackInfo" unique_id=139724285]
+layout_mode = 2
+
+[node name="WorkersLabel" type="Label" parent="MarginContainer/MainVBox/ProductionScroll/ProductionList/LumberjackRow/LumberjackContent/LumberjackInfo/WorkersRow" unique_id=683406922]
+layout_mode = 2
+text = "Рабочие"
+
+[node name="MinusButton" type="Button" parent="MarginContainer/MainVBox/ProductionScroll/ProductionList/LumberjackRow/LumberjackContent/LumberjackInfo/WorkersRow" unique_id=1039595762]
+layout_mode = 2
+text = "-"
+
+[node name="WorkersValue" type="Label" parent="MarginContainer/MainVBox/ProductionScroll/ProductionList/LumberjackRow/LumberjackContent/LumberjackInfo/WorkersRow" unique_id=1378794432]
+layout_mode = 2
+text = "0"
+
+[node name="PlusButton" type="Button" parent="MarginContainer/MainVBox/ProductionScroll/ProductionList/LumberjackRow/LumberjackContent/LumberjackInfo/WorkersRow" unique_id=1002384025]
+layout_mode = 2
+text = "+"
 
 [node name="Spacer" type="Control" parent="MarginContainer/MainVBox/ProductionScroll/ProductionList/LumberjackRow/LumberjackContent" unique_id=1450492484]
 layout_mode = 2
