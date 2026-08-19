@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://8lvl7l74dvxs"]
+
+[ext_resource type="StyleBox" uid="uid://c28io04rkcjvv" path="res://theme/panel_style.tres" id="1_2loyy"]
+[ext_resource type="Script" uid="uid://bhjy8cs5chvef" path="res://scripts/ui/ResourceCard.gd" id="2_w4qkb"]
+
+[node name="ResourceCard" type="PanelContainer" unique_id=2057811175]
+custom_minimum_size = Vector2(0, 170)
+offset_right = 647.0
+offset_bottom = 162.0
+size_flags_horizontal = 3
+theme_override_styles/panel = ExtResource("1_2loyy")
+script = ExtResource("2_w4qkb")
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=566972230]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 16
+
+[node name="Content" type="HBoxContainer" parent="Margin" unique_id=2121750769]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Icon" type="TextureRect" parent="Margin/Content" unique_id=793121125]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ResourceInfo" type="VBoxContainer" parent="Margin/Content" unique_id=197022292]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="NameLabel" type="Label" parent="Margin/Content/ResourceInfo" unique_id=1062534670]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "ЕДА"
+
+[node name="AmountLabel" type="Label" parent="Margin/Content/ResourceInfo" unique_id=1641329566]
+layout_mode = 2
+theme_override_font_sizes/font_size = 46
+text = "1.250"
+
+[node name="WorkersInfo" type="VBoxContainer" parent="Margin/Content" unique_id=479871453]
+custom_minimum_size = Vector2(165, 0)
+layout_mode = 2
+
+[node name="WorkersLabel" type="Label" parent="Margin/Content/WorkersInfo" unique_id=463668071]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "👤 10/10"
+
+[node name="NextWorkerLabel" type="Label" parent="Margin/Content/WorkersInfo" unique_id=1302812927]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "👤+ НУЖНО: 5"
+
+[node name="BuyButton" type="Button" parent="Margin/Content" unique_id=887613797]
+custom_minimum_size = Vector2(190, 130)
+layout_mode = 2
+text = "КУПИТЬ
+✊ 100"
